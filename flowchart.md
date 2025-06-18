@@ -1,5 +1,4 @@
-
-
+```mermaid
 graph TD
     A[Start] --> B[Import Libraries];
     B --> C[Initialize Simulation Parameters<br>n_steps, dt, D, sigma];
@@ -14,7 +13,4 @@ graph TD
     J --> K["Plot MSD vs. Time"];
     K --> L[Show MSD Plot];
     L --> M[Print Final MSD];
-
-    classDef default fill:none,stroke:#333
-    classDef node A,B,C,D,E,F,G,H,I,J,K
-    class node default
+```
