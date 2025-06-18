@@ -1,0 +1,12 @@
+graph TD
+    A[Start] --> B(Inisialisasi Posisi Awal (x=0, y=0));
+    B --> C(Tentukan Jumlah Langkah dan Δt);
+    C --> D{Loop Waktu i = 1 to N_steps};
+    D --> E(Hitung dx dan dy dari N(0, σ²));
+    E --> F(Update Posisi: x_i+1 = x_i + dx, y_i+1 = y_i + dy);
+    F --> G(Simpan Posisi (x_i+1, y_i+1));
+    G --> H{Apakah Loop Selesai?};
+    H -- No --> D;
+    H -- Yes --> I(Hitung Mean Square Displacement (MSD));
+    I --> J(Visualisasi: Animasi Lintasan & Grafik MSD vs Waktu);
+    J --> K[End];
